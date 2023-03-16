@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="comments">
+    <div class="comments__list">
+        <div class="comments__item">
+            <div class="comments__header">
+                <div class="comments__header_name"></div>
+                <div class="comments__header_date"></div>
+            </div>
+            <div class="comments__item_text"></div>
+            <div class="comments__nav">
+                <svg class="comments__nav_like" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                <g id="Layer_1">
+                    <path d="M45.281,25.915c4.949-5.004,4.949-13.146,0-18.15C42.881,5.337,39.688,4,36.292,4c-0.001,0-0.001,0-0.001,0
+                        c-3.396,0-6.59,1.337-8.991,3.765L25,10.09l-2.3-2.325C20.299,5.337,17.106,4,13.709,4c-3.396,0-6.589,1.337-8.99,3.765
+                        c-4.949,5.004-4.949,13.146,0,18.15L25,46.422L45.281,25.915z M6.141,9.171C8.163,7.126,10.852,6,13.709,6
+                        c2.858,0,5.547,1.126,7.569,3.171L25,12.935l3.722-3.764C30.744,7.126,33.433,6,36.291,6c2.858,0,5.546,1.126,7.568,3.171
+                        c4.183,4.229,4.183,11.109,0,15.338L25,43.578L6.141,24.509C1.958,20.28,1.958,13.399,6.141,9.171z"/>
+                </g>
+                                    <g>
+                </g>
+                </svg>
+                <img src="assets/img/delete.svg" alt="delete comment" class="comments__nav_delete">
+            </div>
+        </div>
+    </div>
+    <form action="" class="comments__form form">
+        <div class="form__container">
+            <input type="text" name="name" class="form__input form__name" placeholder="Имя">
+            <p class="form__container_warn">Заполните поле</p>
+        </div>
+        <div class="form__container">
+            <textarea name="text" placeholder="Текст" class="form__input area form__text"></textarea>
+            <p class="form__container_warn">Заполните поле</p>
+        </div>
+        <div class="form__container">
+            <input type="date" name="date" class="form__input">
+            <p class="form__container_warn">Заполните поле</p>
+        </div>
+        <button class="form__btn">Отправить</button>
+    </form>
+</div>
+<script src="assets/scripts/app.js"></script>
+</body>
+</html>

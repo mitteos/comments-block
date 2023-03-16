@@ -1,0 +1,147 @@
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol[class], ul[class] {
+  padding: 0;
+}
+
+blockquote, body, dd, dl, figcaption, figure, h1, h2, h3, h4, li, ol, p, ul {
+  margin: 0;
+}
+
+ol[class], ul[class] {
+  list-style: none;
+}
+
+a, a:not([class]) {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+body {
+  height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: "Roboto", sans-serif;
+}
+
+.comments {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 600px;
+  width: 80%;
+}
+.comments__list {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 15px 20px 10px 20px;
+}
+.comments__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+.comments__item:hover {
+  box-shadow: 4px 4px 8px 2px rgba(34, 60, 80, 0.2);
+}
+.comments__header {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+.comments__header_name {
+  font-size: 20px;
+}
+.comments__header_date {
+  color: rgba(0, 0, 0, 0.5);
+}
+.comments__nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.comments__nav_like, .comments__nav_delete {
+  width: 25px;
+  cursor: pointer;
+}
+.comments__nav_like.liked {
+  fill: red;
+  transition: all 0.3s ease;
+}
+.comments__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  width: 100%;
+  padding: 0 0 10px;
+}
+.form__container {
+  width: 100%;
+}
+.form__container_warn {
+  padding: 5px 0 0 10px;
+  font-size: 12px;
+  color: red;
+  margin: 0 0 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.form__container_warn.active {
+  visibility: visible;
+  opacity: 1;
+}
+.form__input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: none;
+  position: relative;
+  font-size: 14px;
+  box-shadow: 4px 4px 8px 2px rgba(34, 60, 80, 0.2);
+}
+.form__input:focus {
+  outline: none;
+}
+.form__input.area {
+  height: 100px;
+  resize: none;
+}
+.form__btn {
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid #1F25AF;
+  color: #fff;
+  background: #1F25AF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form__btn:hover {
+  background: none;
+  color: #1F25AF;
+}
+
+/*# sourceMappingURL=style.css.map */
